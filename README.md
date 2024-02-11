@@ -1,70 +1,65 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Registration Form
 
-## Available Scripts
+## Features of this version:
+- SPA Registration Form
+- Backend data using express NodeJs
+- Auth SignUp,Login
+- Database handled in MongoDB
 
-In the project directory, you can run:
+### Login
+- Form Validation using Regex
+- AccessToken Validation
+- Only Registered Users in MongoDB
 
-### `npm start`
+### SignUp
+- Form Validation using Regex
+- same Mobile number can't signup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ReactJs
+- HTML/CSS
+- Express-Node.Js
+- MongoDB
 
-### `npm test`
+## Author
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Abhishek Rawat
+-   [GitHub](https://github.com/Abhirawat623)
+-   [LinkedIn](https://www.linkedin.com/in/abhishek-rawat-598151240/)
+-   [Twitter](https://twitter.com/Abhishekrwt38)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live Link
+# Front End
+- https://frontend-signup-form.vercel.app/
+# Back End
+- https://backend-signup-form.vercel.app/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Locally
 
-### `npm run eject`
+Clone the project by adding the following command in the terminal.
+Make sure your have git installed and added to path.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+   https://github.com/Abhirawat623/frontend--signup-form.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm i
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the server
 
-## Learn More
+```bash
+  npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screenshot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Registration Form and 7 more pages - Personal - Microsoft​ Edge 11-02-2024 20_27_24](https://github.com/Abhirawat623/frontend--signup-form/assets/131130116/30857c8b-022c-427a-80bd-e88d9785bb85)
+![Registration Form and 7 more pages - Personal - Microsoft​ Edge 11-02-2024 20_27_14](https://github.com/Abhirawat623/frontend--signup-form/assets/131130116/88043bff-cdac-40d8-945c-c1071e44e051)
