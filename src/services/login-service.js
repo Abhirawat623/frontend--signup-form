@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {  toast } from 'alert';
 export const loginHandler = async (number,password, setAlert)=>{
     try{
         const {data: accessToken,username} = await axios.post(
@@ -9,11 +10,8 @@ export const loginHandler = async (number,password, setAlert)=>{
         console.log({accessToken,username});
         localStorage.setItem("token",accessToken);
         
-        setAlert({
-            open: true,
-            message:"Login Successful!",
-            type: "success"
-          })
+        toast('Login SuccessFully.') 
+
         return {accessToken,username};
     }
     

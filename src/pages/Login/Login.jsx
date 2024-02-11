@@ -5,6 +5,7 @@ import { validateNumber,validatePassword } from "../../utils/index";
 import {loginHandler } from "../../services";
 import {useAuth} from "../../context/index";
 import { useNavigate } from "react-router-dom";
+import { Toaster,toast } from 'alert';
 let isNumberValid,isPasswordValid;
 
 export const Login = () => {
@@ -33,7 +34,7 @@ export const Login = () => {
      payload:event.target.value
    })}
    else{
-     console.log('Inavlid Password')
+    console.log('Inavlid Password')
    }
   }
  
@@ -65,17 +66,21 @@ const token = localStorage.getItem("token")
     })
   }
   }
+  else{
+    toast("Invalid User")
+  }
  }
 
  
 
   return (
-    <Fragment>
+    <Fragment >
+      <Toaster />
       <div className=" auth-login-container signup-container">
         <div className="auth-login d-flex justify-center dir-col align-center">
           <h2 className="color-white">Login</h2>
           <form className="d-flex dir-col gap-s align-center">
-            <span className="auth-background">
+            <span>
               <div className="auth-form">
                 <label className="form-label color-white  ">
                   Mobile Number

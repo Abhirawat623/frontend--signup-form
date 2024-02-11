@@ -6,6 +6,8 @@ import { useAuth} from "../../context/index";
 
 import { useNavigate } from "react-router-dom";
 
+import { toast ,Toaster} from 'alert';
+
 import {
   validateEmail,
   validateName,
@@ -98,21 +100,22 @@ export const SignUp = () => {
       isConfirmPasswordValid
     ) {
       signupHandler(username, number, email, password);
+      navigate("/")
     }
     else{
-      alert("Please fill the form properly")
+      toast("Please fill the form properly")
     }
     authDispatch({
       type: "CLEAR_SIGNUP",
     });
-    navigate("/")
-    
   };
- 
+ const handleBackBtn=()=>{
+  navigate("/")
+ }
 
   return (
     <>
-  
+  <Toaster/>
       <div className=" auth-login-container">
         <div className="auth-login d-flex justify-center dir-col align-center">
           <h2 className="color-white signup">Sign Up</h2>
@@ -120,7 +123,7 @@ export const SignUp = () => {
             onSubmit={handleFormSubmit}
             className="d-flex dir-col gap-s align-center"
           >
-            <span className="auth-signup-background">
+            <span >
               <div className="auth-form">
                 <div className="auth-form">
                   <label className="form-label color-white ml-l">Name*</label>
@@ -182,6 +185,8 @@ export const SignUp = () => {
               </div>
             </span>
             <button className="auth-login-btn ">Create Account</button>
+            <button className="auth-login-btn back-btn"
+            onClick={handleBackBtn}>Back to Login</button>
           </form>
         </div>
       </div>

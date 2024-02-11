@@ -1,4 +1,5 @@
 import axios from "axios";
+import {  toast } from 'alert';
 
 export const signupHandler = async (username, number, email, password,setAlert) => {
   try {
@@ -11,15 +12,15 @@ export const signupHandler = async (username, number, email, password,setAlert) 
         password: password,
       }
     );
-    setAlert({
-      open:true,
-      message:`Hii, ${username}!Your Account Created`,
-      type:"success"
-    })
+   
+      toast(`Hii, ${username}!Your Account Created`)
+      
+    
     console.log("Signed Up");
     console.log(data);
     
   } catch (err) {
     console.log("error adding user to database");
+    toast("Can't add User, Pls fill form again")
   }
 };
