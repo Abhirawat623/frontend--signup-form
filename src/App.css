@@ -1,155 +1,93 @@
-/***    General     ***/
+
+@import url("./pages/Login/Login.css");
+@import url("./pages/SignUp//SignUp.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-color: #f8faf3;
+  --secondary-color: rgb(155, 17, 155);
+  --text-color: rgb(0, 0, 0);
+  --shadow: rgba(95, 94, 94, 0.705);
+  --accent-color: #2f205e;
+}
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.text-bold {
+  font-weight: bolder;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-xs{
+  gap:5px
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 
 body {
-  margin: auto auto
+  background-color: var(--primary-color);
+
+  overflow-x: hidden;
 }
 
-.m-5-auto {
-  margin: auto auto
+.my-text {
+  color: var(--text-color);
+}
+.d-flex {
+  display: flex;
 }
 
-.primary-button {
-  margin-top: 5rem;
-  margin-right: 1rem;
-  padding: .6rem;
-  width: 10rem;
-  background: #222;
-  border: none;
-  color: #fff;
+.d-grid {
+  display: grid;
+}
+
+.text-s {
+  font-size: 0.8rem;
+}
+
+.text-m {
   font-size: 1.2rem;
-  transition: all .5s;
-  cursor: pointer;
-  text-transform: capitalize
 }
 
-/***    Landing Page     ***/
-.main-title,
-.main-para {
-  color: #f1f1f1
+.text-l {
+  font-size: 1.6rem;
+}
+.space-between {
+  justify-content: space-between;
 }
 
-.main-title {
-
-  padding-top: 16rem;
-  padding-left: 33rem;
-  font-size: 5rem;
-  font-family: 'Fascinate', cursive;
-  text-transform: uppercase
+.align-center {
+  align-items: center;
+}
+.dir-col {
+  flex-direction: column;
 }
 
-.main-para {
-  font-size: 2.5rem;
-  text-Transform: capitalize
+.dir-row {
+  flex-direction: row;
 }
 
-#reg_btn span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.gap-s {
+  gap: 1rem;
 }
 
-#reg_btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.gap-m {
+  gap: 1.5rem;
 }
 
-#reg_btn:hover span {
-padding-right: 25px;
+.gap-l {
+  gap: 2.5rem;
 }
 
-#reg_btn:hover span:after {
-opacity: 1;
-right: 0;
-}
-
-/***    Login Page     ***/
-h2 {
-  font-weight: 300
-}
-
-form {
-  display: inline-block;
-  background: #f3f3f3;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 2rem;
-  margin: 2rem 0 1rem 0
-}
-
-form label {
-  float: left;
-  font-size: .9rem;
-  margin: 0;
-  padding: 0
-}
-
-.right-label {
-  float: right;
-  cursor: pointer
-}
-
-input {
-  width: 15rem;
-  padding: .3rem;
-  border-radius: 5px;
-  outline: none;
-  border: none
-}
-
-#sub_btn {
-  display: block;
-  width: 100%;
-  padding: .3rem;
-  border: none;
-  background: #222;
-  color: #fff;
-  border-radius: 3px;
-}
-
-#sub_btn:hover {
-  background: #333;
-  transition: all .5s
-}
-
-footer p {
-  margin: 0;
-  font-size: .9rem
-}
-
-/***    Register Page     ***/
-#checkbox {
-  width: 1rem
-}
-
-.author-text{
-  color:white;
-  font-style:italic;
-  margin-left: 5px;
-}
-
-form span {
-  font-size: .8rem
-}
-
-#reset_pass_lbl {
-  float: left
-}
-
-/***    Home Page     ***/
-.home-page-title {
-  color: #222
-}
-
-.text-center{
-  text-align: center;
+.gap-xl {
+  gap: 3rem;
 }
