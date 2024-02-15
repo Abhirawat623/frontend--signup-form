@@ -45,7 +45,7 @@ Clone the project by adding the following command in the terminal.
 Make sure your have git installed and added to path.
 
 ```bash
-   https://github.com/Abhirawat623/frontend--signup-form.git
+   git clone https://github.com/Abhirawat623/frontend--signup-form.git
 ```
 
 Install dependencies
